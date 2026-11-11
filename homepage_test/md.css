@@ -1,0 +1,103 @@
+/* md (Tablet, Figma frame "Tablet" 800px): 768px - 1023px */
+
+:root { --gutter: 32px; }
+
+/* ---------- common ---------- */
+.section { padding-left: 32px; padding-right: 32px; }
+.sec-head { margin-bottom: 40px; }
+
+/* nav */
+.nav .menu { gap: 8px; }
+
+/* hero (800 x 637) */
+.hero { height: 693px; padding-top: 0; }
+.hero .bg { left: 0; top: 0; width: 1209px; height: 693px; transform: none; }
+.hero .content { max-width: none; height: 100%; padding: 136px 32px 80px; }
+.hero .stack { width: 100%; }
+.hero .sub { font-size: 18px; line-height: 26px; letter-spacing: -.45px; font-weight: 400; }
+
+/* partner band */
+.logo-strip { padding: 12px 0; overflow: hidden; }
+.logo-strip img { width: 764px; max-width: none; }
+
+/* ---------- session_1 problem: 1 full-width card + 2 columns ---------- */
+.problem .cards { flex-wrap: wrap; }
+.problem .news { flex: 1 1 0; min-width: 0; }
+.problem .news:first-child { flex: 0 0 100%; }
+
+.problem .news:nth-child(3) .body .b18 { text-wrap: balance; }
+
+/* ---------- session_2 compare ---------- */
+.panel-new { min-width: 400px; }
+.plus-badge { left: calc(50% - 24px); }
+
+/* ---------- session_3 flow: browser on top, steps below ---------- */
+.flow { flex-direction: column-reverse; align-items: stretch; gap: 40px; }
+.flow .steps { flex-shrink: 1; width: 100%; }
+.flow .items { width: auto; flex: 1; min-width: 0; }
+.flow .rail i { height: 70px; }
+.browser { flex: none; width: 100%; align-self: stretch; }
+
+/* ---------- session_4 layers ---------- */
+.layers .head { margin-bottom: 40px; }
+.layer-card .top { padding: 0; }
+.link-plus { content: url("assets/md-link-plus.svg"); width: 24px; height: 29px; }
+.layer-card .top .name { text-align: center; }
+.layer-card .top .desc { height: 48px; min-height: 0; overflow: hidden; }
+.layers .foot { margin-top: 20px; font-size: 15px; line-height: 20px; letter-spacing: -.375px; color: var(--text-subtle); }
+
+/* ---------- session_5 env ---------- */
+.tabs { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex: 0 0 200px; }
+.env-card { width: 100%; }
+.env-stage .arch { max-width: 100%; }
+.arch .row { max-width: 100%; }
+.arch .arrow { flex-shrink: 1; min-width: 40px; }
+
+/* ---------- session_6 partners ---------- */
+.partners .sec-head .h2 { height: 30px; display: flex; align-items: center; }
+.partners .rows { padding: 0; width: 100%; }
+.partners .rows .stack { width: 100%; }
+.partners .rows .stack .row:first-child { width: 100%; justify-content: space-between; gap: 0; }
+.partners .rows .stack .row:first-child .plogo { flex: 1 1 0; width: auto; min-width: 0; }
+
+/* ---------- session_7 trust ---------- */
+.trust .sec-head { margin-bottom: 32px !important; max-width: 612px; }
+.trust .h2, .sec-head.row .h2 { font-size: 40px; line-height: 44px; letter-spacing: -1px; }
+.trust .certs { margin-bottom: 32px; align-items: flex-start; }
+.trust .cert:nth-child(1) .im { width: 117px !important; height: 159px !important; }
+.trust .cert:nth-child(2) .im { width: 122px !important; height: 158px !important; }
+.trust .cert:nth-child(3) .im { width: 122px !important; height: 154px !important; }
+.cert span { white-space: nowrap; }
+.fact { gap: 4px; }
+.fact.hl img { width: 48px; height: 48px; }
+
+/* ---------- session_8 / 9 cards ---------- */
+.sec-head.row { margin-bottom: 8px; }
+.sec-head.row[style] { margin-bottom: 8px !important; }
+.cards3 { margin-top: 0 !important; }
+.card { height: 240px; min-width: 0; }
+.card .txt { padding: 16px; gap: 8px; }
+.card .txt.fixed, .card .txt { height: 120px; }
+.card .txt.news { gap: 8px; padding: 16px 20px; height: auto; flex: none; min-width: 0; }
+.card:nth-child(2) .slot img { inset: auto; left: 0; top: 0; width: 344px; height: 194px; }
+.card .title { font-size: 18px; line-height: 26px; letter-spacing: -.45px; }
+.card .title.wrap { height: 52px; }
+
+/* ---------- session_10 faq ---------- */
+.faq { padding: 80px 32px; }
+.faq-item { gap: 0; }
+.faq-q { transition: margin-bottom .35s cubic-bezier(.4,0,.2,1); }
+.faq-item.open .faq-q { margin-bottom: 4px; }
+
+/* ---------- cta ---------- */
+.cta { padding: 80px 32px; }
+.cta .in { gap: 16px; max-width: 600px; }
+.cta .big { font-size: 32px; line-height: 30px; letter-spacing: -.8px; }
+.cta .big span { font-weight: 400; }
+
+/* ---------- footer ---------- */
+.footer { padding: 24px 32px; }
+.footer .btn.line { position: static; flex-shrink: 0; }
+.footer .top .tel b { font-size: 24px; line-height: 30px; letter-spacing: -.6px; }

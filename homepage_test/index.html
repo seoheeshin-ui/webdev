@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YATAV | AI 에이전트 통합 제어 인프라 AEGIS</title>
+    <meta
+      name="description"
+      content="안심하고 쓰는 AI, 통제에서 시작됩니다. 외부 AI 서비스 대화 탐지부터 차단, 감사까지."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="md.css"
+      media="(min-width: 768px) and (max-width: 1023px)"
+    />
+    <link rel="stylesheet" href="sm.css" media="(max-width: 767px)" />
+  </head>
+  <body>
+    <!-- 알림 배너 -->
+    <div class="top-banner">
+      <div class="marquee">
+        <div class="track">
+          <div class="item">
+            <img src="assets/megaphone.svg" alt="" />
+            <p>
+              YATAV 사업 행사 참여나 뉴스 제목 등 회사의 활동을 보여주는 알림
+              배너 (ex. MWC 2027 4YFN 1차 기업 선정
+            </p>
+          </div>
+          <!-- md/sm marquee loop copy (hidden on ld) -->
+          <div class="item" aria-hidden="true">
+            <img src="assets/megaphone.svg" alt="" />
+            <p>
+              YATAV 사업 행사 참여나 뉴스 제목 등 회사의 활동을 보여주는 알림
+              배너 (ex. MWC 2027 4YFN 1차 기업 선정
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <div class="nav-wrap">
+      <header class="nav">
+        <div class="inner">
+          <a href="#top"
+            ><img class="logo" src="assets/logo.svg" alt="YATAV"
+          /></a>
+          <nav class="menu">
+            <a href="#solution">솔루션</a>
+            <a href="#company">회사</a>
+            <a href="#content">콘텐츠</a>
+          </nav>
+          <a class="btn primary" href="#contact">도입 문의하기</a>
+        </div>
+      </header>
+    </div>
+
+    <main id="top">
+      <!-- 히어로 -->
+      <section class="hero">
+        <img class="bg" src="assets/hero-bg.png" alt="" />
+        <div class="content">
+          <div class="stack">
+            <p class="eyebrow">AI 에이전트 통합 제어 인프라</p>
+            <h1 class="display">
+              <span>안심하고 쓰는 AI</span><span>통제에서 시작됩니다</span>
+            </h1>
+            <p class="sub">
+              금융권 실환경 검증으로 안전하게!<br /><span class="only-sm"
+                >애드온 방식으로 편하게!<br /></span
+              >외부 AI 서비스 대화 탐지부터 차단, 감사까지 한 번에 만나보세요!
+            </p>
+            <a class="btn soft" href="#contact">도입 문의하기</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 파트너 로고 스트립 -->
+      <div class="logo-strip">
+        <img src="assets/partners-strip.png" alt="파트너 로고" />
+      </div>
+
+      <!-- 문제 제기 -->
+      <section class="section problem" id="solution">
+        <div class="sec-head" style="margin-bottom: 40px">
+          <h2 class="h2">
+            직원들은 이미 AI를 쓰고 있습니다<br />무엇이 오가는지 알고 계신가요?
+          </h2>
+          <p class="lead">
+            직원들이 AI에 입력하는 데이터는 기존 보안의 통제 범위를 벗어날 수
+            있습니다<br />민감정보 유출을 방지하기 위해서는 AI 요청 내용까지
+            확인하는 보안이 필요합니다
+          </p>
+        </div>
+        <div class="cards">
+          <!-- 카드 1 -->
+          <article class="news">
+            <div class="visual">
+              <div class="diagram" style="width: 299px; height: 109px">
+                <div class="node hot" style="left: 0; top: 41px">
+                  <img src="assets/p-monitor-smartphone.svg" alt="" /><span
+                    >직원 PC</span
+                  >
+                </div>
+                <div class="node" style="left: 231px; top: 41px">
+                  <img src="assets/p-globe.svg" alt="" /><span>외부AI</span>
+                </div>
+                <div
+                  class="line"
+                  style="left: 68px; top: 17px; width: 163px; height: 21px"
+                >
+                  <div style="inset: -4.72% -0.61% -13.68% -0.37%">
+                    <img src="assets/p-line1.svg" alt="" />
+                  </div>
+                </div>
+                <div class="icon-label" style="left: 161px; top: 0">
+                  <img src="assets/p-shield-user.svg" alt="" /><span
+                    >고객 정보</span
+                  >
+                </div>
+                <div class="icon-label" style="left: 94px; top: 0">
+                  <img src="assets/p-folder-key.svg" alt="" /><span
+                    >회사 데이터</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 class="h1 m">외부 AI로 나가는 데이터</h3>
+              <p class="b18">
+                오류를 찾으려고 올린 소스코드가 그대로 외부 AI로 전달됩니다.
+              </p>
+            </div>
+          </article>
+          <!-- 카드 2 -->
+          <article class="news">
+            <div class="visual">
+              <div class="diagram" style="width: 288px; height: 90px">
+                <div class="node" style="left: 0; top: 0">
+                  <img src="assets/p-message-square.svg" alt="" /><span
+                    >질문</span
+                  >
+                </div>
+                <div class="node hot" style="left: 103px; top: 0">
+                  <img src="assets/p-bot.svg" alt="" /><span>사내 챗봇</span>
+                </div>
+                <div class="node" style="left: 198px; top: 0; width: 90px">
+                  <img src="assets/p-folder-key2.svg" alt="" /><span
+                    >권한 밖 문서</span
+                  >
+                </div>
+                <div
+                  class="line"
+                  style="left: 68px; top: 35px; width: 31px; height: 0"
+                >
+                  <div style="inset: -7.36px -3.23% -7.36px 0">
+                    <img src="assets/p-line2.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="line"
+                  style="left: 171px; top: 35px; width: 22px; height: 0"
+                >
+                  <div style="inset: -7.36px -4.55% -7.36px 0">
+                    <img src="assets/p-line3.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="line"
+                  style="
+                    left: 31px;
+                    top: 68px;
+                    width: 216px;
+                    height: 22px;
+                    transform: scaleY(-1);
+                  "
+                >
+                  <div style="inset: -4.55% -0.46% -4.55% -3.41%">
+                    <img src="assets/p-line4.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 class="h1 m">사내 AI로 들어오는 요청</h3>
+              <p class="b18">
+                질문한 직원에게 열람 권한이 없는 문서의 내용이 사내 챗봇의
+                답변에 담길 수 있습니다.
+              </p>
+            </div>
+          </article>
+          <!-- 카드 3 -->
+          <article class="news">
+            <div class="visual">
+              <div class="diagram" style="width: 293px; height: 68px">
+                <div class="node" style="left: 0; top: 0; width: 100px">
+                  <img src="assets/p-code-xml.svg" alt="" /><span
+                    >코딩 에이전트</span
+                  >
+                </div>
+                <div class="node" style="left: 225px; top: 0">
+                  <img src="assets/p-file-text.svg" alt="" /><span>파일</span>
+                </div>
+                <div
+                  style="
+                    position: absolute;
+                    left: 115px;
+                    top: 9px;
+                    width: 95px;
+                    height: 48px;
+                  "
+                >
+                  <div
+                    class="line"
+                    style="left: 0; top: 13px; width: 95px; height: 25px"
+                  >
+                    <div style="inset: -29.46% -1.05%">
+                      <img src="assets/p-group9.svg" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="node hot"
+                    style="left: 23px; top: 0; width: 48px; height: 48px"
+                  >
+                    <img src="assets/p-circle-question.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <h3 class="h1 m">AI 에이전트가 실행하는 작업</h3>
+              <p class="b18">
+                코딩 에이전트는 파일을 읽고 명령을 실행합니다. 기록이 없으면
+                접근한 파일과 실행한 작업을 추적할 수 없습니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 기존 보안 + AEGIS -->
+      <section class="section compare">
+        <div class="sec-head">
+          <h2 class="h2">
+            AEGIS는 기존 보안의 데이터 이동 통제에<br />AI 요청 판정을 더합니다
+          </h2>
+          <p class="lead">
+            지금 쓰는 보안 장비와 정책에 AI 요청 판정을 더해 AI 사용 환경까지
+            통제하세요
+          </p>
+        </div>
+        <div class="compare-grid">
+          <div class="panel-old">
+            <div class="panel-in">
+              <div class="panel-head">
+                <p class="h1 sb">기존 보안 인프라</p>
+                <p class="b16">접속과 경로를 관리합니다</p>
+              </div>
+              <div class="pill b16">접근과 통신 경로 관리</div>
+              <div class="pill b16">파일 반출과 웹 트래픽 관리</div>
+              <div class="pill b16">네트워크와 인증 관리</div>
+            </div>
+          </div>
+          <div class="panel-new">
+            <div class="panel-head">
+              <p class="h1 sb">AEGIS</p>
+              <p class="b18">요청의 내용과 실행을 판정합니다</p>
+            </div>
+            <div class="pill b18">질문 · 응답 · 첨부 내용 판정</div>
+            <div class="pill b18">사용자 · 직무 · 데이터 등급별 조치</div>
+            <div class="pill b18">에이전트 도구 호출 통제와 이력 기록</div>
+          </div>
+          <div class="plus-badge"><img src="assets/plus.svg" alt="+" /></div>
+        </div>
+      </section>
+
+      <!-- 처리 흐름 -->
+      <section class="section" style="background: #fff">
+        <div class="sec-head">
+          <h2
+            class="h2"
+            style="width: 344px; max-width: 100%; white-space: nowrap"
+          >
+            접속 여부를 넘어,<br />요청의 내용과 실행 맥락까지
+          </h2>
+        </div>
+        <div class="flow">
+          <div class="steps">
+            <div class="rail" style="justify-content: center">
+              <span class="num">1</span><i></i><span class="num">2</span><i></i
+              ><span class="num">3</span><i></i><span class="num">4</span>
+            </div>
+            <div class="items">
+              <div class="item">
+                <img src="assets/f-diagram.svg" alt="" />
+                <div class="t">
+                  <p class="h1 m">AI 트래픽 확보</p>
+                  <p class="b16">PC · 네트워크 · 서버의 AI 요청 수집</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/f-shield-check.svg" alt="" />
+                <div class="t">
+                  <p class="h1 m">판정·정책 엔진</p>
+                  <p class="b16">
+                    개인정보와 공격 시도 탐지 및 사내 보안 정책에 따라 판단
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/f-scroll-text.svg" alt="" />
+                <div class="t">
+                  <p class="h1 m">정책 기반 처리</p>
+                  <p class="b16">위험 수준에 따라 허용 또는 마스킹·차단</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/f-file-text.svg" alt="" />
+                <div class="t">
+                  <p class="h1 m">감사기록</p>
+                  <p class="b16">
+                    판정 근거와 처리 이력을 위변조 방지가 가능한 형태로 보관
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="browser">
+            <div class="bar"><img src="assets/f-controls.svg" alt="" /></div>
+            <img
+              class="shot"
+              src="assets/f-screenshot.png"
+              alt="AEGIS 콘솔 화면"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 레이어 -->
+      <section
+        class="section slate layers"
+        style="padding-top: 80px; padding-bottom: 80px"
+      >
+        <div class="head">
+          <h2 class="h2">
+            직원의 <span>PC부터 회사의 서버</span>까지<br />AI 보안을 촘촘하게.
+          </h2>
+          <p class="lead">
+            PC에서는 AEGISEdge가 통제하고, 네트워크의 AI 트래픽은 AEGIScope가
+            모아 AEGIS가 판정합니다
+          </p>
+        </div>
+        <div class="layer-row">
+          <article class="layer-card">
+            <div class="top">
+              <div class="ic">
+                <img src="assets/c-monitor-smartphone.svg" alt="" />
+              </div>
+              <p class="name" style="font-weight: 400; text-align: center">
+                AEGISEdge
+              </p>
+              <p class="b16 desc">AI를 쓰는 바로 그 자리에서 통제합니다</p>
+            </div>
+            <a class="btn primary" href="#contact">자세히 보기</a>
+          </article>
+          <img class="link-plus" src="assets/c-plus.svg" alt="" />
+          <article class="layer-card">
+            <div class="top">
+              <div class="ic"><img src="assets/c-wifi.svg" alt="" /></div>
+              <p class="name" style="font-weight: 400; text-align: center">
+                AEGIScope
+              </p>
+              <p class="b16 desc">
+                지금의 망 그대로<br class="br-mds" /> AI 트래픽만 골라<br />통제로 연결합니다
+              </p>
+            </div>
+            <a class="btn primary" href="#contact">자세히 보기</a>
+          </article>
+          <img class="link-plus" src="assets/c-plus.svg" alt="" />
+          <article class="layer-card">
+            <div class="top">
+              <div class="ic">
+                <img src="assets/c-shield-check.svg" alt="" />
+              </div>
+              <p class="name">AEGIS</p>
+              <p class="b16 desc">
+                AI 요청 하나하나를<br class="br-mds" /> 회사 정책으로<br class="br-ld" /> 판정합니다
+              </p>
+            </div>
+            <a class="btn primary" href="#contact">자세히 보기</a>
+          </article>
+          <img class="link-plus" src="assets/c-plus.svg" alt="" />
+          <div class="ai-svc">
+            <img src="assets/c-bot.svg" alt="" /><span>AI 서비스</span>
+          </div>
+        </div>
+        <p class="cap13 foot">
+          *AEGIS 콘솔을 통해 공통 정책으로 운영이 가능합니다
+        </p>
+      </section>
+
+      <!-- 환경별 (session_5) -->
+      <section class="section env">
+        <div class="sec-head">
+          <h2 class="h2">어떤 환경이든,<br />같은 정책으로 통제합니다.</h2>
+          <p class="lead">
+            PC, 네트워크, 기존 보안 장비 등 고객 환경에 맞는 위치에서 AI 사용을
+            통제합니다
+          </p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="고객 환경">
+          <button
+            class="tab active"
+            role="tab"
+            id="tab-0"
+            aria-controls="panel-0"
+            aria-selected="true"
+            tabindex="0"
+            data-index="0"
+          >
+            재택 · 외부 근무 환경
+          </button>
+          <button
+            class="tab"
+            role="tab"
+            id="tab-1"
+            aria-controls="panel-1"
+            aria-selected="false"
+            tabindex="-1"
+            data-index="1"
+          >
+            자체 AI 서비스 운영 환경
+          </button>
+          <button
+            class="tab"
+            role="tab"
+            id="tab-2"
+            aria-controls="panel-2"
+            aria-selected="false"
+            tabindex="-1"
+            data-index="2"
+          >
+            보안 장비 운영 환경
+          </button>
+          <button
+            class="tab"
+            role="tab"
+            id="tab-3"
+            aria-controls="panel-3"
+            aria-selected="false"
+            tabindex="-1"
+            data-index="3"
+          >
+            PC 설치가 어려운 환경
+          </button>
+          <button
+            class="tab"
+            role="tab"
+            id="tab-4"
+            aria-controls="panel-4"
+            aria-selected="false"
+            tabindex="-1"
+            data-index="4"
+          >
+            망분리 · 폐쇄망 환경
+          </button>
+        </div>
+        <div class="env-card">
+          <div
+            class="env-panel"
+            role="tabpanel"
+            id="panel-0"
+            aria-labelledby="tab-0"
+          >
+            <div class="env-stage">
+              <div class="arch">
+                <div class="row">
+                  <div class="n">
+                    <img src="assets/e-code-xml.svg" alt="" /><b
+                      >AI 앱 · 코딩 도구</b
+                    >
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n hot">
+                    <img src="assets/e-shield-check.svg" alt="" /><b>AEGIS</b
+                    ><small>PC 안에서 판정</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/e-globe.svg" alt="" /><b>외부 AI 서비스</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="env-info">
+              <div class="r">
+                <h3 class="h1 m" style="height: 30px">재택 · 외부 근무 환경</h3>
+                <span class="chip">AEGISEdge</span>
+              </div>
+              <p class="b18">
+                사내망 밖에 있는 PC에서도&nbsp; AI 사용을 통제합니다
+              </p>
+              <p class="b18" style="color: var(--text-subtle)">
+                재택과 출장 비중이 높은 조직, 코딩 도구를 쓰는 개발 조직
+              </p>
+            </div>
+          </div>
+          <div
+            class="env-panel"
+            role="tabpanel"
+            id="panel-1"
+            aria-labelledby="tab-1"
+            hidden
+          >
+            <div class="env-stage">
+              <div class="arch">
+                <div class="row">
+                  <div class="n w114">
+                    <img src="assets/a-users-round.svg" alt="" /><b
+                      >임직원·고객</b
+                    >
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n hot">
+                    <img src="assets/e-shield-check.svg" alt="" /><b>AEGIS</b
+                    ><small>입력 ·응답 판정</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/a-bot.svg" alt="" /><b>사내 AI 서비스</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="env-info">
+              <div class="r">
+                <h3 class="h1 m" style="height: 30px">
+                  자체 AI 서비스 운영 환경
+                </h3>
+                <span class="chip">AEGIS</span>
+              </div>
+              <p class="b18">
+                사내 AI 서비스로 오가는 입력과 응답을 판정합니다
+              </p>
+              <p class="b18" style="color: var(--text-subtle)">
+                챗봇 등 AI 서비스를 직접 운영하는 조직
+              </p>
+            </div>
+          </div>
+          <div
+            class="env-panel"
+            role="tabpanel"
+            id="panel-2"
+            aria-labelledby="tab-2"
+            hidden
+          >
+            <div class="env-stage">
+              <div class="arch has-down">
+                <div class="row">
+                  <div class="n w114">
+                    <img src="assets/a-users-round.svg" alt="" /><b
+                      >임직원·고객</b
+                    >
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n mid">
+                    <img src="assets/a-lr2.svg" alt="" /><b>보유 장비</b
+                    ><small>L7 스위치·SWG·프록시</small>
+                    <div class="down">
+                      <div class="v">
+                        <img src="assets/a-vline.svg" alt="" />
+                      </div>
+                      <div class="n hot">
+                        <img src="assets/e-shield-check.svg" alt="" /><b
+                          >AEGIS</b
+                        ><small>AI 요청 판정</small>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/a-bot.svg" alt="" /><b>사내 AI 서비스</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="env-info">
+              <div class="r">
+                <h3 class="h1 m" style="height: 30px">보안 장비 운영 환경</h3>
+                <span class="chip">AEGIS</span>
+              </div>
+              <p class="b18">
+                보유한 L7 스위치·SWG·프록시와 연동해 AI 요청을 판정합니다
+              </p>
+              <p class="b18" style="color: var(--text-subtle)">
+                기존 보안 장비를 유지하면서 AI 사용을 통제하려는 조직
+              </p>
+            </div>
+          </div>
+          <div
+            class="env-panel"
+            role="tabpanel"
+            id="panel-3"
+            aria-labelledby="tab-3"
+            hidden
+          >
+            <div class="env-stage">
+              <div class="arch has-down">
+                <div class="row">
+                  <div class="n">
+                    <img src="assets/a-users-round.svg" alt="" /><b
+                      >임직원 · 협력사 단말</b
+                    ><small>AEGISEdge 설치 가능</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n hot mid">
+                    <img src="assets/a-lr1.svg" alt="" /><b>AEGIScope</b
+                    ><small>AI 트래픽 선별 · 복호화</small>
+                    <div class="down">
+                      <div class="v">
+                        <img src="assets/a-vline.svg" alt="" />
+                      </div>
+                      <div class="n hot">
+                        <img src="assets/e-shield-check.svg" alt="" /><b
+                          >AEGIS</b
+                        ><small>AI 요청 판정</small>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/a-bot.svg" alt="" /><b>사내 AI 서비스</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="env-info">
+              <div class="r">
+                <h3 class="h1 m" style="height: 30px">PC 설치가 어려운 환경</h3>
+                <span class="chip">AEGIScope</span>
+              </div>
+              <p class="b18">
+                단말 설치 없이 네트워크에서 AI 트래픽을 선별해 통제합니다
+              </p>
+              <p class="b18" style="color: var(--text-subtle)">
+                임직원과 협력사 단말이 섞여 있어 설치가 어려운 조직
+              </p>
+            </div>
+          </div>
+          <div
+            class="env-panel"
+            role="tabpanel"
+            id="panel-4"
+            aria-labelledby="tab-4"
+            hidden
+          >
+            <div class="env-stage">
+              <div class="arch">
+                <div class="row">
+                  <div class="n w114">
+                    <img src="assets/a-users-round.svg" alt="" /><b>임직원 PC</b
+                    ><small>업무망 단말</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n hot w166">
+                    <img src="assets/e-shield-check.svg" alt="" /><b>AEGIS</b
+                    ><small>입력 ·응답 판정</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/a-bot.svg" alt="" /><b>사내 AI 서비스</b>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="n w114">
+                    <img src="assets/a-users-round.svg" alt="" /><b>임직원 PC</b
+                    ><small>인터넷망 단말</small>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n hot w94 join-l">
+                    <img src="assets/a-lr1.svg" alt="" /><b>AEGIScope</b>
+                  </div>
+                  <div class="n hot w72 join-r">
+                    <img src="assets/e-shield-check.svg" alt="" /><b>AEGIS</b>
+                  </div>
+                  <img class="arrow" src="assets/e-arrow.svg" alt="" />
+                  <div class="n">
+                    <img src="assets/e-globe.svg" alt="" /><b>외부 AI 서비스</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="env-info">
+              <div class="r">
+                <h3 class="h1 m" style="height: 30px">망분리 · 폐쇄망 환경</h3>
+                <span class="chip">AEGIScope · AEGIS</span>
+              </div>
+              <p class="b18">
+                업무망과 인터넷망이 분리된 환경에서도 같은 정책으로 판정합니다
+              </p>
+              <p class="b18" style="color: var(--text-subtle)">
+                망분리 · 폐쇄망을 운영하는 조직
+              </p>
+            </div>
+          </div>
+          <div class="env-bar"><i id="env-progress"></i></div>
+        </div>
+      </section>
+
+      <!-- 파트너와 고객사 -->
+      <section class="section slate partners" id="company">
+        <div class="sec-head">
+          <h2 class="h2">파트너와 고객사</h2>
+          <p class="lead">
+            최적의 파트너사와 실제 기업 환경을 통해 검증하며 기술력을 증명하고
+            있습니다
+          </p>
+        </div>
+        <div class="rows">
+          <div class="row">
+            <div class="plogo">
+              <div class="box" style="width: 178px; height: 34px">
+                <img
+                  src="assets/partner-download11.png"
+                  alt=""
+                  style="inset: 0; width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+            </div>
+            <div class="plogo">
+              <div class="box" style="width: 178px; height: 40px">
+                <img
+                  src="assets/partner-image65.png"
+                  alt=""
+                  style="inset: 0; width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+            </div>
+            <div class="plogo">
+              <div class="box clip" style="width: 197px; height: 55px">
+                <img
+                  src="assets/partner-ci121.png"
+                  alt=""
+                  style="height: 137.5%; left: -0.1%; top: -3.52%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="row">
+              <div class="plogo">
+                <div class="box" style="width: 146px; height: 24px">
+                  <img
+                    src="assets/partner-tdart.svg"
+                    alt=""
+                    style="inset: 0; width: 100%; height: 100%"
+                  />
+                </div>
+              </div>
+              <div class="plogo">
+                <div class="box clip" style="width: 132px; height: 24px">
+                  <img
+                    src="assets/partner-image33.png"
+                    alt=""
+                    style="height: 100%; left: 0.35%; top: 0; width: 95.44%"
+                  />
+                </div>
+              </div>
+              <div class="plogo">
+                <div class="box clip" style="width: 132px; height: 24px">
+                  <img
+                    src="assets/partner-novartis.png"
+                    alt=""
+                    style="height: 100%; left: -0.11%; top: 0; width: 96.59%"
+                  />
+                </div>
+              </div>
+              <div class="plogo">
+                <div class="box clip" style="width: 161px; height: 24px">
+                  <img
+                    src="assets/partner-image76.png"
+                    alt=""
+                    style="
+                      height: 781.64%;
+                      left: -16.34%;
+                      top: -338.32%;
+                      width: 129.98%;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="plogo">
+                <div class="box clip" style="width: 149px; height: 36px">
+                  <img
+                    src="assets/partner-image81.png"
+                    alt=""
+                    style="height: 117.44%; left: 0; top: -1.58%; width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="plogo">
+                <div class="box clip" style="width: 156px; height: 43.333px">
+                  <img
+                    src="assets/partner-download10.png"
+                    alt=""
+                    style="height: 116.51%; left: 0; top: -8.26%; width: 100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 신뢰 -->
+      <section class="section trust">
+        <div class="sec-head" style="gap: 8px; margin-bottom: 40px">
+          <h2 class="h2">AEGIS를 믿고 쓸 수 있는 이유</h2>
+          <p class="lead">
+            특허, 인증, 운영 경험까지 AI 서비스에 필요한 핵심 역량을 모두 갖추고
+            있는 YATAV가 만들었습니다
+          </p>
+        </div>
+        <div class="certs">
+          <div class="cert">
+            <div class="im" style="width: 147px; height: 199.864px">
+              <img
+                src="assets/t-cert93.png"
+                alt="GS 1등급 인증서"
+                style="inset: 0; height: 100%; object-fit: cover"
+              />
+            </div>
+            <span>[인증] GS 1등급 소프트웨어 품질 인증서</span>
+          </div>
+          <div class="cert">
+            <div class="im" style="width: 153px; height: 197px">
+              <img
+                src="assets/t-cert92.png"
+                alt="기술혁신형 중소기업 확인서"
+                style="height: 109.35%; top: -0.09%"
+              />
+            </div>
+            <span>[인증] 기술혁신형 중소기업(Inno-Biz) 확인서</span>
+          </div>
+          <div class="cert">
+            <div class="im" style="width: 153px; height: 192px">
+              <img
+                src="assets/t-cert91.png"
+                alt="벤처기업확인서"
+                style="height: 112.42%; top: -0.06%"
+              />
+            </div>
+            <span>[인증] 벤처기업확인서</span>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="r">
+            <div class="fact">
+              <img src="assets/t-chart-column.svg" alt="" />LLM 실전 1억+ 토큰
+              운영 경험
+            </div>
+            <div class="fact">
+              <img src="assets/t-database.svg" alt="" />엔터프라이즈급 GPU
+              인프라 운영
+            </div>
+            <div class="fact">
+              <img src="assets/t-handshake.svg" alt="" />대규모 정부·민간 AI
+              사업 수행
+            </div>
+          </div>
+          <div class="r">
+            <div class="fact hl">
+              <img src="assets/t-layers.svg" alt="" />AI 특허 20건
+            </div>
+            <div class="fact">
+              <img src="assets/t-globe.svg" alt="" />CJK 언어 특화
+            </div>
+            <div class="fact">
+              <img src="assets/t-newspaper.svg" alt="" />AI 바우처 공급 기업
+              선정
+            </div>
+            <div class="fact hl">
+              <img src="assets/t-award.svg" alt="" />TIPS 선정
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 도입 사례 -->
+      <section
+        class="section"
+        style="background: #fff; padding-top: 120px"
+        id="content"
+      >
+        <div class="sec-head row">
+          <div><h2 class="h2">도입 사례</h2></div>
+          <a class="btn ghost" href="#"
+            >전체 보기<img src="assets/arrow-right.svg" alt=""
+          /></a>
+        </div>
+        <div class="cards3">
+          <a class="card" href="#">
+            <div class="slot"><img src="assets/case1.png" alt="" /></div>
+            <div class="txt fixed">
+              <span class="tag">인사이트</span>
+              <p class="title">금융권 방분리의 대응 전략</p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="slot">
+              <img src="assets/case2.png" alt="" style="object-position: top" />
+            </div>
+            <div class="txt fixed">
+              <span class="tag">리포트</span>
+              <p class="title">AI 챗봇 보안 강화 사례</p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="slot"><img src="assets/case3.png" alt="" /></div>
+            <div class="txt">
+              <span class="tag">고객 사례</span>
+              <p class="title wrap">
+                AI 챗봇 만들 때 놓치면<br />안 되는 세 가지
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 뉴스 -->
+      <section
+        class="section"
+        style="background: #fff; padding-top: 120px; padding-bottom: 120px"
+      >
+        <div class="sec-head row" style="margin-bottom: 16px">
+          <div>
+            <h2 class="h2">다양한 활동을 둘러보세요</h2>
+            <p class="lead">
+              AI를 안전하고 생산성 있게, 그리고 경제적으로 쓰도록 YATAV가
+              선도하겠습니다
+            </p>
+          </div>
+          <a class="btn ghost" href="#"
+            >기사 전체 보기<img src="assets/arrow-right.svg" alt=""
+          /></a>
+        </div>
+        <div class="cards3" style="margin-top: 8px">
+          <a class="card" href="#">
+            <div class="slot"></div>
+            <div class="txt news">
+              <p class="title">
+                망분리 완화에 고삐 풀린 금융 AI… ‘보안 빗장’ 거는 야타브
+              </p>
+              <div class="meta">
+                <span>뉴스연합</span><span>·</span><span>2026.00.00</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="slot"></div>
+            <div class="txt news">
+              <p class="title">AI DLP는 어디까지 막는가</p>
+              <div class="meta">
+                <span>뉴스연합</span><span>·</span><span>2026.00.00</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="slot"></div>
+            <div class="txt news">
+              <p class="title">망분리는 49개사의 문제, 나머지는</p>
+              <div class="meta">
+                <span>뉴스연합</span><span>·</span><span>2026.00.00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- FAQ (session_10) -->
+      <section class="faq">
+        <div class="wrap">
+          <h2>자주 묻는 질문</h2>
+          <div>
+            <div class="faq-item open">
+              <button
+                class="faq-q"
+                id="faq-q-0"
+                aria-expanded="true"
+                aria-controls="faq-a-0"
+              >
+                <span class="q">우리 서버인데 왜 root 권한을 안 주나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-0"
+                role="region"
+                aria-labelledby="faq-q-0"
+              >
+                <div>
+                  <p>
+                    운영·보안·업데이트를 공급사가 전부 책임지는 봉인형(no-root)
+                    구조이기 때문입니다. root 권한을 제한해 코드와 데이터의
+                    무결성을 보호하고, 장애·보안 패치·모델<br />업데이트는 SLA로
+                    벤더가 처리합니다. 별도 IT 인력 없이 ‘관리할 필요 없는
+                    제품’으로 운영됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                id="faq-q-1"
+                aria-expanded="false"
+                aria-controls="faq-a-1"
+              >
+                <span class="q">시작가 1,900만원에는 무엇이 포함되나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-1"
+                role="region"
+                aria-labelledby="faq-q-1"
+              >
+                <div><p>답변 내용이 준비되는 대로 안내드립니다.</p></div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                id="faq-q-2"
+                aria-expanded="false"
+                aria-controls="faq-a-2"
+              >
+                <span class="q"
+                  >AI가 없는 내용을 지어내면(할루시네이션) 어떻게 하나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-2"
+                role="region"
+                aria-labelledby="faq-q-2"
+              >
+                <div><p>답변 내용이 준비되는 대로 안내드립니다.</p></div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                id="faq-q-3"
+                aria-expanded="false"
+                aria-controls="faq-a-3"
+              >
+                <span class="q">HWP(한글 문서)를 정말 처리하나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-3"
+                role="region"
+                aria-labelledby="faq-q-3"
+              >
+                <div><p>답변 내용이 준비되는 대로 안내드립니다.</p></div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                id="faq-q-4"
+                aria-expanded="false"
+                aria-controls="faq-a-4"
+              >
+                <span class="q">작게 시작해서 나중에 키울 수 있나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-4"
+                role="region"
+                aria-labelledby="faq-q-4"
+              >
+                <div><p>답변 내용이 준비되는 대로 안내드립니다.</p></div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                id="faq-q-5"
+                aria-expanded="false"
+                aria-controls="faq-a-5"
+              >
+                <span class="q"
+                  >우리 문서로 파인튜닝이나 데이터 가공도 해주나요?</span
+                ><span class="btn-icon"
+                  ><img src="assets/chevron-down.svg" alt=""
+                /></span>
+              </button>
+              <div
+                class="faq-a"
+                id="faq-a-5"
+                role="region"
+                aria-labelledby="faq-q-5"
+              >
+                <div><p>답변 내용이 준비되는 대로 안내드립니다.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 도입 문의 CTA -->
+      <section class="cta" id="contact">
+        <div class="in">
+          <div class="lbl">
+            <img src="assets/user-round-pen.svg" alt="" /><span class="b16"
+              >도입 문의</span
+            >
+          </div>
+          <div class="big">
+            <b>무료 PoC로</b><span>가볍게 시작해보세요</span>
+          </div>
+          <a class="btn soft" href="mailto:yatav@yatavai.com"
+            >무료 PoC 신청하기<img src="assets/arrow-right.svg" alt=""
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="top">
+        <span class="co">(주) 야타브</span>
+        <span class="tel"><b>Tel</b><span>02 2039 0633</span></span>
+      </div>
+      <hr />
+      <div class="cols">
+        <div class="info">
+          <div><b>대표</b><span>이성찬, 조은상</span></div>
+          <div><b>Tel</b><span>02 2039 0633</span></div>
+          <div><b>BRN</b><span>750-88-01121</span></div>
+          <div><b>Fax</b><span>02 2039 0632</span></div>
+          <div><b>Email</b><span>yatav@yatavai.com</span></div>
+        </div>
+        <div class="col">
+          <b>솔루션</b><a href="#solution">AEGIS 어플라이언스</a
+          ><a href="#solution">주요 기능</a
+          ><a href="#solution">금융권 망분리</a>
+        </div>
+        <div class="col"><b>회사</b><a href="#company">회사 소개</a></div>
+        <div class="col">
+          <b>콘텐츠</b><a href="#content">뉴스</a><a href="#content">블로그</a
+          ><a href="#content">연구실</a>
+        </div>
+        <a class="btn line" href="#">개인정보처리방침</a>
+      </div>
+      <hr />
+      <p class="addr">
+        서울특별시 성동구 성수이로22길 37 아크밸리지식산업센터 305A
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
