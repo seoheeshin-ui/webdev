@@ -11,11 +11,28 @@
 .nav { padding: 12px 32px; }
 .nav .inner { max-width: none; justify-content: space-between; gap: 24px; }
 .nav .inner > a:first-child { display: none; }
-.nav .menu {
-  order: -1; flex: none; width: 36px; height: 36px; border-radius: 8px; overflow: hidden; font-size: 0;
-  background: rgba(0,0,85,.01) url(assets/sm-menu.svg) center / 20px 20px no-repeat;
+.nav .menu { display: none; }
+.burger {
+  order: -1; display: block; flex: none; width: 36px; height: 36px; border-radius: 8px; position: relative; cursor: pointer;
+  background: rgba(0,0,85,.01); border: 0; padding: 0;
+  color: color-mix(in srgb, #1c2024 calc(var(--p)*100%), #edeef0);
 }
-.nav .menu a { display: none; }
+.burger::before, .burger[aria-expanded="true"]::before { content: ""; position: absolute; inset: 0; background: currentColor; -webkit-mask: url(assets/sm-menu.svg) center / 20px 20px no-repeat; mask: url(assets/sm-menu.svg) center / 20px 20px no-repeat; }
+.burger[aria-expanded="true"]::before { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M4.5 4.5l11 11M15.5 4.5l-11 11' stroke='%23000' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E"); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M4.5 4.5l11 11M15.5 4.5l-11 11' stroke='%23000' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.burger:active { background: rgba(0,0,45,.09); }
+.nav.menu-open { background: #fff !important; box-shadow: none !important; }
+.nav.menu-open .burger { color: #1c2024; }
+.mnav {
+  display: block; position: absolute; left: 0; right: 0; top: 64px; z-index: 29;
+  max-height: calc(100vh - 64px); overflow-y: auto; background: #fff; padding: 8px 16px 24px;
+  box-shadow: 0 12px 32px -16px rgba(0,0,85,.05), 0 8px 40px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,85,.05);
+}
+.mnav[hidden] { display: none; }
+.mnav .grp { padding: 16px 16px 8px; display: flex; flex-direction: column; }
+.mnav .grp + .grp { border-top: 1px solid var(--slate-3); }
+.mnav p { font-size: 18px; line-height: 26px; letter-spacing: -.45px; font-weight: 600; color: #13171f; margin-bottom: 4px; }
+.mnav a { padding: 10px 0; font-size: 16px; line-height: 24px; letter-spacing: -.4px; color: #536678; }
+.mnav a:active { color: #13171f; }
 
 /* ---------- hero ---------- */
 .hero { height: 692px; padding-top: 0; align-items: flex-end; }

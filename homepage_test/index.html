@@ -9,6 +9,7 @@
       content="안심하고 쓰는 AI, 통제에서 시작됩니다. 외부 AI 서비스 대화 탐지부터 차단, 감사까지."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="detail.css" />
     <link
       rel="stylesheet"
       href="md.css"
@@ -47,14 +48,39 @@
           <a href="#top"
             ><img class="logo" src="assets/logo.svg" alt="YATAV"
           /></a>
+          <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mnav"></button>
           <nav class="menu">
-            <a href="#solution">솔루션</a>
-            <a href="#company">회사</a>
-            <a href="#content">콘텐츠</a>
+            <div class="item">
+              <button class="trigger" type="button" aria-expanded="false" aria-haspopup="true">솔루션</button>
+              <div class="dropdown" role="menu">
+                <a role="menuitem" href="#/solution/edge">AEGISEdge</a>
+                <a role="menuitem" href="#/solution/scope">AEGIScope</a>
+                <a role="menuitem" href="#/solution/aegis">AEGIS</a>
+              </div>
+            </div>
+            <div class="item">
+              <button class="trigger" type="button" aria-expanded="false" aria-haspopup="true">회사</button>
+              <div class="dropdown" role="menu">
+                <a role="menuitem" href="#company">회사 소개</a>
+              </div>
+            </div>
+            <div class="item">
+              <button class="trigger" type="button" aria-expanded="false" aria-haspopup="true">콘텐츠</button>
+              <div class="dropdown" role="menu">
+                <a role="menuitem" href="#content">뉴스</a>
+                <a role="menuitem" href="#content">블로그</a>
+                <a role="menuitem" href="#content">연구실</a>
+              </div>
+            </div>
           </nav>
           <a class="btn primary" href="#contact">도입 문의하기</a>
         </div>
       </header>
+      <nav class="mnav" id="mnav" aria-label="모바일 메뉴" hidden>
+        <div class="grp"><p>솔루션</p><a href="#/solution/edge">AEGISEdge</a><a href="#/solution/scope">AEGIScope</a><a href="#/solution/aegis">AEGIS</a></div>
+        <div class="grp"><p>회사</p><a href="#company">회사 소개</a></div>
+        <div class="grp"><p>콘텐츠</p><a href="#content">뉴스</a><a href="#content">블로그</a><a href="#content">연구실</a></div>
+      </nav>
     </div>
 
     <main id="top">
@@ -1144,6 +1170,9 @@
       </section>
     </main>
 
+    <!-- 솔루션 세부 페이지 (#/solution/edge · scope · aegis, detail.js 가 렌더링) -->
+    <main id="detail" hidden></main>
+
     <!-- 푸터 -->
     <footer class="footer">
       <div class="top">
@@ -1160,9 +1189,9 @@
           <div><b>Email</b><span>yatav@yatavai.com</span></div>
         </div>
         <div class="col">
-          <b>솔루션</b><a href="#solution">AEGIS 어플라이언스</a
-          ><a href="#solution">주요 기능</a
-          ><a href="#solution">금융권 망분리</a>
+          <b>솔루션</b><a href="#/solution/edge">AEGISEdge</a
+          ><a href="#/solution/scope">AEGIScope</a
+          ><a href="#/solution/aegis">AEGIS</a>
         </div>
         <div class="col"><b>회사</b><a href="#company">회사 소개</a></div>
         <div class="col">
@@ -1178,5 +1207,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="detail.js"></script>
   </body>
 </html>

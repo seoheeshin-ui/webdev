@@ -1,0 +1,114 @@
+/* 솔루션 세부 페이지 (AEGISEdge / AEGIScope / AEGIS)
+   디자인: Figma "홈페이지 세부 솔루션" 1425:3462 — PC 1425:9938 (1280) / Tablet 1425:9746 (800) / Mobile 1425:9541 (375)
+   lg: >= 1024px (기본) · md: 768-1023px · sm: <= 767px */
+
+#detail[hidden] { display: none; }
+.d-page { --dg: var(--gutter); }
+
+/* ---------- common ---------- */
+.d-sec { padding: 120px var(--dg); background: #fff; }
+.d-sec.slate { background: var(--slate-1); }
+.d-sec > .in { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+.d-h2 { font-size: 32px; line-height: 40px; letter-spacing: -.8px; font-weight: 600; color: var(--text); }
+.d-h2 em { font-style: normal; color: #0068df; }
+
+/* ---------- hero ---------- */
+.d-hero { position: relative; overflow: hidden; color: #fff; height: 440px; background: linear-gradient(to bottom, #001d35 22.361%, #00529e); padding: 60px var(--dg) 0; display: flex; align-items: center; }
+.d-hero .bg { position: absolute; left: 50%; top: 0; width: 1920px; min-width: 100%; height: auto; max-width: none; transform: translateX(-50%); pointer-events: none; }
+.d-hero .in { position: relative; z-index: 1; width: 100%; max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.d-hero .eyebrow { font-size: 24px; line-height: 30px; letter-spacing: -.6px; font-weight: 300; }
+.d-hero .name { font-size: 48px; line-height: 60px; letter-spacing: -1.2px; font-weight: 600; color: #edeef0; }
+.d-hero .sub { font-size: 18px; line-height: 26px; letter-spacing: -.45px; }
+.d-hero .btn { border-radius: 6px; }
+
+/* ---------- session_1: 카드 4 (image slot 160 + 텍스트) ---------- */
+.d-problem { display: flex; gap: 16px; align-items: flex-start; }
+.d-pcard { flex: 1; min-width: 240px; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.d-pcard .visual { flex: none; height: 160px; background: var(--slate-2); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.d-pcard .visual.mock { padding: 12px; }
+.d-pcard .visual > img.pic { flex: none; height: 100%; width: auto; max-width: none; }
+.d-pcard .txt { background: #fff; padding: 24px 0; display: flex; flex-direction: column; gap: 4px; }
+.d-pcard h3 { font-size: 24px; line-height: 30px; letter-spacing: -.6px; font-weight: 500; }
+.d-pcard p { font-size: 18px; line-height: 26px; letter-spacing: -.45px; }
+
+.v-icons { display: flex; align-items: center; gap: 12px; }
+.v-icons img { width: 48px; height: 48px; }
+.v-chips { width: 100%; display: flex; flex-direction: column; gap: 8px; }
+.v-chip { background: #fff; border-radius: 6px; padding: 8px 12px; box-shadow: var(--shadow-3); font-size: 14px; line-height: 20px; letter-spacing: -.35px; font-weight: 500; }
+.v-code { width: 100%; background: #fff; border-radius: 8px; padding: 10px 14px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 3px; font-size: 13px; line-height: 18px; letter-spacing: -.3px; color: var(--text-subtle); }
+.v-code b { font-weight: 600; color: var(--text); }
+.v-rows { width: 100%; background: #fff; border-radius: 8px; padding: 10px 14px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 5px; }
+.v-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-size: 13px; line-height: 18px; letter-spacing: -.3px; }
+.v-row span { color: var(--text-subtle); white-space: nowrap; }
+.v-row em { font-style: normal; font-weight: 500; text-align: right; min-width: 0; }
+.v-row em.bad { color: var(--warning); }
+.v-row em.ok { color: var(--blue-9); }
+
+/* ---------- session_2~4: 제목 + (목록 400 | 이미지 720:405), 이미지 좌우 교차 ---------- */
+.d-rbody { display: flex; align-items: center; gap: 32px; }
+.d-rbody.rev { flex-direction: row-reverse; }
+.f-list { flex: none; width: 400px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+.f-item { background: var(--slate-1); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 4px; }
+.f-item h4 { font-size: 24px; line-height: 30px; letter-spacing: -.6px; font-weight: 500; }
+.f-item p { font-size: 16px; line-height: 24px; letter-spacing: -.4px; }
+.d-shot { flex: 1; min-width: 0; aspect-ratio: 720 / 405; background: #fff; border: 12px solid var(--slate-3); border-radius: 12px; box-shadow: var(--shadow-4); }
+
+/* ---------- session_5: 제목 + 카드 3 ---------- */
+.d-effects { display: flex; gap: 20px; align-items: stretch; }
+.d-ecard { flex: 1; min-width: 0; background: #fff; border-radius: 8px; box-shadow: var(--shadow-2); padding: 24px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+.d-ecard h3 { font-size: 24px; line-height: 30px; letter-spacing: -.6px; font-weight: 500; }
+.d-ecard p { font-size: 18px; line-height: 26px; letter-spacing: -.45px; }
+
+/* ---------- cta: 제목 + 버튼 ---------- */
+.d-cta { position: relative; overflow: hidden; color: #fff; background: linear-gradient(to bottom, #001d35, #00529e); padding: 64px var(--dg); }
+.d-cta .bg { position: absolute; left: 50%; top: 0; width: 1920px; min-width: 100%; height: auto; max-width: none; transform: translateX(-50%); pointer-events: none; }
+.d-cta .in { position: relative; z-index: 2; max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 40px; }
+.d-cta h2 { font-size: 32px; line-height: 40px; letter-spacing: -.8px; font-weight: 600; }
+
+/* ================= md: tablet 768-1023 ================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .d-page { --dg: 32px; }
+  .d-sec { padding: 80px var(--dg); }
+  .d-problem { flex-wrap: wrap; gap: 16px; }
+  .d-pcard { flex: 1 1 calc(50% - 8px); min-width: 0; }
+  .d-pcard .txt { padding: 24px 0; }
+  .f-list { width: 344px; gap: 0; }
+  .f-item { background: none; padding: 16px 0; gap: 4px; border-bottom: 1px solid var(--slate-3); }
+  .f-item:last-child { border-bottom: 0; }
+  .f-item h4 { font-size: 18px; line-height: 26px; letter-spacing: -.45px; font-weight: 600; }
+  .f-item p { font-size: 16px; line-height: 24px; }
+  .d-shot { flex: 1; min-width: 0; border-width: 8px; }
+  .d-ecard { padding: 20px; }
+  .d-ecard h3 { font-size: 20px; line-height: 28px; letter-spacing: -.5px; }
+  .d-ecard p { font-size: 16px; line-height: 24px; letter-spacing: -.4px; }
+}
+
+/* ================= sm: mobile <= 767 ================= */
+@media (max-width: 767px) {
+  .d-page { --dg: 16px; }
+  .d-hero { padding: 40px 20px 0; }
+  .d-hero .in { gap: 16px; }
+  .d-hero .eyebrow { font-size: 18px; line-height: 26px; letter-spacing: -.45px; }
+  .d-hero .name { font-size: 40px; line-height: 44px; letter-spacing: -1px; }
+  .d-hero .sub { font-size: 14px; line-height: 20px; letter-spacing: -.35px; }
+  .d-sec { padding: 80px var(--dg); }
+  .d-sec > .in { gap: 32px; }
+  .d-h2, .d-cta h2 { font-size: 24px; line-height: 30px; letter-spacing: -.6px; }
+  .d-h2 .br-d, .d-cta .br-d { display: none; }
+  .d-problem { flex-direction: column; gap: 16px; }
+  .d-pcard { flex: none; min-width: 0; width: 100%; }
+  .d-pcard h3 { font-size: 20px; line-height: 28px; letter-spacing: -.5px; }
+  .d-pcard p { font-size: 16px; line-height: 24px; letter-spacing: -.4px; }
+  /* 이미지가 위, 목록이 아래 */
+  .d-rbody, .d-rbody.rev { flex-direction: column-reverse; align-items: stretch; gap: 20px; }
+  .f-list { width: auto; gap: 0; }
+  .f-item { background: none; padding: 16px 0; border-bottom: 1px solid var(--slate-3); }
+  .f-item:last-child { border-bottom: 0; }
+  .f-item h4 { font-size: 18px; line-height: 26px; letter-spacing: -.45px; font-weight: 600; }
+  .d-shot { flex: none; width: 100%; border-width: 8px; }
+  .d-effects { flex-direction: column; gap: 20px; }
+  .d-ecard { padding: 20px; }
+  .d-ecard h3 { font-size: 20px; line-height: 28px; letter-spacing: -.5px; }
+  .d-ecard p { font-size: 16px; line-height: 24px; letter-spacing: -.4px; }
+  .d-cta .in { gap: 24px; }
+}

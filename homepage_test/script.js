@@ -1,11 +1,11 @@
 /* ---------- Sticky nav: fades to white in proportion to scroll (100% at the end of the hero) ---------- */
 (function () {
   var nav = document.querySelector('.nav');
-  var hero = document.querySelector('.hero');
   if (!nav) return;
   var end = 1;
   function measure() {
-    // distance at which the nav reaches the bottom edge of the hero
+    // distance at which the nav reaches the bottom edge of the hero (home or solution detail page)
+    var hero = document.querySelector('main:not([hidden]) .hero, main:not([hidden]) .d-hero');
     end = hero ? hero.getBoundingClientRect().bottom + window.scrollY - nav.offsetHeight : 400;
     if (end < 1) end = 1;
   }
@@ -17,7 +17,36 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', function () { measure(); onScroll(); });
   window.addEventListener('load', function () { measure(); onScroll(); });
+  document.addEventListener('routechange', function () { measure(); onScroll(); });
   measure(); onScroll();
+})();
+
+/* ---------- Nav dropdowns: click trigger to toggle; outside click / Esc / item click closes ---------- */
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.nav .menu .item'));
+  if (!items.length) return;
+  function closeAll(except) {
+    items.forEach(function (it) {
+      if (it === except) return;
+      it.classList.remove('open');
+      it.querySelector('.trigger').setAttribute('aria-expanded', 'false');
+    });
+  }
+  items.forEach(function (it) {
+    var btn = it.querySelector('.trigger');
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = !it.classList.contains('open');
+      closeAll(it);
+      it.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    it.querySelectorAll('.dropdown a').forEach(function (a) {
+      a.addEventListener('click', function () { closeAll(); });
+    });
+  });
+  document.addEventListener('click', function () { closeAll(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
 })();
 
 /* ---------- Top banner marquee (md / sm): constant 25px per second ---------- */
@@ -103,4 +132,23 @@ document.querySelectorAll('.faq-q').forEach(function (btn) {
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   items.forEach(function (el) { io.observe(el); });
+})();
+
+/* ---------- Mobile (sm) menu: hamburger toggles the nav panel ---------- */
+(function () {
+  var burger = document.querySelector('.burger');
+  var panel = document.getElementById('mnav');
+  var nav = document.querySelector('.nav');
+  if (!burger || !panel || !nav) return;
+  function setOpen(open) {
+    panel.hidden = !open;
+    nav.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  }
+  burger.addEventListener('click', function (e) { e.stopPropagation(); setOpen(panel.hidden); });
+  panel.addEventListener('click', function (e) { e.stopPropagation(); if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('click', function () { setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 767) setOpen(false); });
 })();
